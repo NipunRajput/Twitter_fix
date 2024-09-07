@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Result</title>
+</head>
+<body>
+    <h1>Scraped Tweet/Page</h1>
+
+    <div>
+        <h2>Screenshot</h2>
+        <img src="/{{ image_path }}" alt="Screenshot">
+        <br>
+        <a href="/download_image/{{ image_path.split('/')[-1] }}">Download Screenshot</a>
+    </div>
+
+    <div>
+        <h2>Tweet/Page Text</h2>
+        <p>{{ text }}</p>
+        <a href="/download_text/{{ text_path.split('/')[-1] }}">Download Text File</a>
+    </div>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
